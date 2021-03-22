@@ -15,7 +15,13 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
             test: /\.(s*)css$/,
             use: [
                 miniCss.loader,
-                'css-loader',
+                {
+                    loader: 'css-loader',
+                    options: {
+                        url: false
+                    }
+                },
+                'resolve-url-loader',
                 'postcss-loader',
                 'sass-loader',
             ],

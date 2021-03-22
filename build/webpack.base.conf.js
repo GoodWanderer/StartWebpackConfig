@@ -26,6 +26,7 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]',
+                    outputPath: 'img/'
                 },
             },
             {
@@ -48,6 +49,7 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 { from: `${PATH.src}/img`, to: `${PATH.dist}/img`, noErrorOnMissing: true},
+                { from: `${PATH.src}/fonts`, to: `${PATH.dist}/fonts`, noErrorOnMissing: true},
             ]
         }),
         new CleanWebpackPlugin(),

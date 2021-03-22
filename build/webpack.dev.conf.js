@@ -20,7 +20,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
                 miniCss.loader,
                 {
                     loader: 'css-loader',
-                    options: {sourceMap: true}
+                    options: {
+                        sourceMap: true,
+                        url: false
+                    }
+                },
+                {
+                    loader: 'resolve-url-loader',
                 },
                 {
                     loader: 'sass-loader',
