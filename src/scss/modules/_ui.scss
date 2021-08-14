@@ -1,0 +1,34 @@
+a {
+  color: #000000;
+  transition: all 0.2s;
+  &:hover {
+    color:  #E1B16B;
+  }
+}
+
+.btn {
+  font-weight: bold;
+  color: #fff;
+  background-color: #E1B16B;
+  cursor: pointer;
+  &:hover {
+    color:  #fff;
+  }
+}
+
+.reverse {
+  display: inline-block;
+  transform: rotate(180deg);
+  transform-origin: 50% 58%;
+}
+
+.title {
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+}

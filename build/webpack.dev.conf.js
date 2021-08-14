@@ -6,6 +6,7 @@ const webpack = require('webpack');
 
 const devWebpackConfig = merge(baseWebpackConfig, {
     mode: 'development',
+    target: 'web',
 
     output: {
         filename: 'script.js',
